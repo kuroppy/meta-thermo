@@ -1,0 +1,16 @@
+./out_prodigal/test.faa43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/test.faa,43.57
+./out_prodigal/gip_test.faa,43.57
+./faa/gip_test.faa,43.57
+./faa/gip_test.faa,43.57
+./faa/gip_test.faa,43.57
