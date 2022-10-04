@@ -41,7 +41,7 @@ def gene_prediction_dataID(data_id, prodigal_path):
 # MPT_calculation.py
 path_scripts = os.path.dirname(__file__)
 def temperature_prediction_inFile(in_file):
-    os.system('python3 {}/MPTcalculation.py {} MPT_output.txt AA_output.txt'.format(path_scripts, in_file))
+    os.system('python3 {}/MPTcalculation.py {} MPT_output.csv AA_output.txt'.format(path_scripts, in_file))
 
 def temperature_prediction_dataID(data_id):
-    os.system('python3 {}/MPTcalculation.py ./faa/{}.faa MPT_output.txt AA_output.txt'.format(path_scripts, data_id))
+    os.system('python3 {}/MPTcalculation.py ./faa/{}.faa MPT_output.csv AA_output.txt'.format(path_scripts, data_id))

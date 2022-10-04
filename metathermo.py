@@ -10,9 +10,9 @@ p = argparse.ArgumentParser()
 p.add_argument('-f', '--file', required=True, help='Input file path.')
 p.add_argument('-t', '--type', choices=['fastq', 'fastq_qf', 'fna', 'faa'], help='input file type', required=True)
 p.add_argument('--gz', help='This argument is required when input file is gzipped file.', action='store_true')
-p.add_argument('--fastp', default='fastp')
-p.add_argument('--seqkit', default='seqkit')
-p.add_argument('--prodigal', default='prodigal')
+p.add_argument('--fastp', default='fastp', help='Absolute path for fastp')
+p.add_argument('--seqkit', default='seqkit', help='Absolute path for seqkit')
+p.add_argument('--prodigal', default='prodigal', help='Absolute path for prodigal')
 args = p.parse_args()
 
 in_file = args.file

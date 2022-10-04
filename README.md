@@ -1,15 +1,15 @@
 MetaThermo : Metagenomic Thermometer
 ====================================================
 
-Metagenomic Thermometer is the tool to predicting the environmental temperature from metagenomic sequences.
+Metagenomic Thermometer is the tool for predicting the environmental temperature of metagenomic samples from metagenomic sequences.
 
 Installation
 ---------------
 
-## Requirements
+### Requirements
 MetaThermo requires python packages listed below to function correctly.
 
- * python 3.x
+ * python>=3.6.5
  * numpy>=1.19.0
 
 MetaThermo also requires several executables listed below.
@@ -18,21 +18,23 @@ MetaThermo also requires several executables listed below.
  * seqkit
  * prodigal
 
-## Install
+### Install
 
 ```bash
-pip install git+
+git clone https://github.com/kuroppy/meta-thermo.git
+cd meta-thermo
+pip install .
 ```
 
 Usage
 -----
 
-## Basic usage
+### Basic usage
 ```bash
 python ../metathermo.py -f [input_file] -t [file_type]
 ```
 
-## Input files
+### Input files
 The following files can be used as input files, and file type must be declared after the -t (--type) option.
  * fastq [-t fastq]
  * quality filtered fastq [-t fastq_qf]
@@ -41,7 +43,7 @@ The following files can be used as input files, and file type must be declared a
 
 Gzip compressed files also can be used with the --gz option.
 
-## Optional
+### Specify absolute paths for executable programs
 If the required executables do not exist in the directory through which the path passes, an absolute path must be provided.
 ```bash
 python ../metathermo.py -f [input_file] -t [file_type] --gz --fastp [path_to_fastp] --seqkit [path_to_seqkit] --prodigal [path_to_prodigal]
@@ -50,7 +52,7 @@ python ../metathermo.py -f [input_file] -t [file_type] --gz --fastp [path_to_fas
 ## Example and output
 Here is an example of analysis using `test.fastq` in the `test_data` directory. 
 ```bash
-cd test_data
+cd meta-thermo/test_data/
 python ../metathermo.py -f test.fastq -t fastq
 ```
 The following directories or files will be output to the current directory.
@@ -58,8 +60,8 @@ The following directories or files will be output to the current directory.
  * qf_report/test.html test.json
  * fna/test.fna
  * faa/test.faa
- * AA_output.txt
- * MPT_output.txt
+ * AA_output.txt (input filename and amino acid counts)
+ * MPT_output.csv (input filename and Metagenomic Predicted Temperature)
 
 ```bash
 cat AA_output.txt
