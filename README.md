@@ -73,8 +73,8 @@ cat MPT_output.csv
 
 MetaThermo web application
 ------------
-MetaThermo processing can be performed online at http://metathermo.jp/.
-You can also check the MetaThermo workflow at MetaThermo web page.
+MetaThermo processing can be performed online at http://metathermo.jp/.<br>
+You can also check the MetaThermo workflow at this web page.
 
 Publications
 ------------
