@@ -67,7 +67,7 @@ The following directories or files will be output to the current directory.
 cat AA_output.txt
 ./faa/test.faa{'*': 20, 'A': 1490, 'C': 168, 'D': 661, 'E': 853, 'F': 520, 'G': 1104, 'H': 313, 'I': 700, 'K': 530, 'L': 1411, 'M': 282, 'N': 455, 'P': 748, 'Q': 544, 'R': 1011, 'S': 743, 'T': 729, 'V': 1091, 'W': 201, 'X': 11, 'Y': 351}
 
-cat MPT_output.txt
+cat MPT_output.csv
 ./faa/test.faa,43.57
 ```
 
