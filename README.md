@@ -56,10 +56,10 @@ cd meta-thermo/test_data/
 python ../metathermo.py -f test.fastq -t fastq
 ```
 The following directories or files will be output to the current directory.
- * qf_fq/test.qf.fq
- * qf_report/test.html test.json
- * fna/test.fna
- * faa/test.faa
+ * metathermo_intermediates/qf_fq/test.qf.fq
+ * metathermo_intermediates/qf_report/test.html test.json
+ * metathermo_intermediates/fna/test.fna
+ * metathermo_intermediates/faa/test.faa
  * AA_output.txt (input filename and amino acid counts)
  * MPT_output.csv (input filename and Metagenomic Predicted Temperature)
 
