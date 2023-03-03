@@ -41,12 +41,12 @@ The following files can be used as input files, and file type must be declared a
  * nucleotide fasta [-t fna]
  * amino acid fasta [-t faa]
 
-Gzip compressed files also can be used with the --gz option.
+Gzip compressed files also can be used.
 
 ### Specify absolute paths for executable programs
 If the required executables do not exist in the directory through which the path passes, an absolute path must be provided.
 ```bash
-python ../metathermo.py -f [input_file] -t [file_type] --gz --fastp [path_to_fastp] --seqkit [path_to_seqkit] --prodigal [path_to_prodigal]
+python ../metathermo.py -f [input_file] -t [file_type] --fastp [path_to_fastp] --seqkit [path_to_seqkit] --prodigal [path_to_prodigal]
 ```
 
 ## Example and output
