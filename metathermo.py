@@ -54,10 +54,10 @@ else:
 if args.type == 'fastq':
 	run_job_fastq(in_file)
 elif args.type == 'fastq_qf':
-	run_job_fastq(in_file)
+	run_job_fastq_qf(in_file)
 elif args.type == 'fna':
-	run_job_fastq(in_file)
+	run_job_fna(in_file)
 elif args.type == 'faa':
-	run_job_fastq(in_file)
+	run_job_faa(in_file)
 else:
 	print('Submission failed. Inappropriate file.')
